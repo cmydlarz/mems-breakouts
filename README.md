@@ -5,7 +5,7 @@ After working on various audio sensing projects I built up a collection of break
 When [this analog mic](https://invensense.tdk.com/products/analog/ics-40720) came out it blew everything else out of the water. The 70dBA SNR was a huge jump from the \~60dBA alternatives at the time and the differential output helped overcome the major analog mic drawback of RFi noise pickup. This SNR has since been beaten by the [Invensense ICS-40730](https://invensense.tdk.com/products/analog/ics-40730) with its larger housing. The ICS-40720 shown below (image credit: [valordk](https://imgur.com/gallery/FbyeXKg)), had a pretty weak frequency response with a low frequency roll-off at around 75Hz making it less than ideal for urban sound monitoring applications and to be honest, most high-fidelity recording in general.
 
 <p align="center">
-<img src="ics40720/img/ics40720-front-back.png" width="95%">
+<img src=ics40720/img/ics40720-front-back.png width="95%">
 </p>
 
 The application in our case was a first order ambisonic microphone that could use the small size of the MEMS microphone housing to reduce the overall size of the microphone array to reduce the impact of high frequency spatial aliasing that can reduce the perceived quality of spatial audio recordings. This project was undertaken with a fantastic team of NYU Music Tech students (Gabriel Zalles, Yigal Kamel, Ian Anderson, Chris Neil, and Spencer Cappiello). We published an AES paper on the design, build and testing of an initial prototype:
@@ -24,7 +24,7 @@ NB: seems like there's a directional version of the ICS-40720 that could be grea
 This model has gone into 2 of our urban noise monitoring sensors because of: (1) it's I<sup>2</sup>S output being able to interface directly with many single board computers and microcontrollers; (2) solid low frequency performance with a roll-off at \~30Hz; and (3) very high RFi and EMi resistance from it's almost immediate analog to digital conversion on the built-in ASIC.
 
 <p align="center">
-<img src="ics43432/img/ics43432.png" width="75%">
+<img src=ics43432/img/ics43432.png width="75%">
 </p>
 
 This one was a real tight squeeze as I wanted it's diameter to be 1/4" so that it could fit inside a 1/4" calibrator and be closer to omni-directional. This ones tricky to assemble but with a stencil and PCB oven it usually works out fine. With a reliable design that fits inside this size of calibrator, you can quickly calibrate your field deployed MEMS mics periodically and calibrate them when using different types of waterproof screens.
